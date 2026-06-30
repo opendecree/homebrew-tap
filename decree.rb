@@ -5,21 +5,21 @@
 class Decree < Formula
   desc "decree — the OpenDecree configuration CLI"
   homepage "https://github.com/opendecree/decree"
-  version "0.12.0-alpha.4"
+  version "0.12.0-alpha.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/opendecree/decree/releases/download/v0.12.0-alpha.4/decree_darwin_amd64.tar.gz"
-      sha256 "db01ba6d7cc2ad88fd5a3c66e0355166325cc4aafb5320825185fa85410d033a"
+      url "https://github.com/opendecree/decree/releases/download/v0.12.0-alpha.5/decree_darwin_amd64.tar.gz"
+      sha256 "9b9a3648a27a12fe07eb6b180f959c364ea4edab1ff6948dd4f8042ef5d0e5c4"
 
       define_method(:install) do
         bin.install "decree"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/opendecree/decree/releases/download/v0.12.0-alpha.4/decree_darwin_arm64.tar.gz"
-      sha256 "b3431df1533218dbb4f78f1d67fb60153ad56bd3085ad03d7e9c8b6ba90d1630"
+      url "https://github.com/opendecree/decree/releases/download/v0.12.0-alpha.5/decree_darwin_arm64.tar.gz"
+      sha256 "401d09a2db8f776c3ad0bcd0fddeef970c9b4c8bba98715672141461c3ca4cf2"
 
       define_method(:install) do
         bin.install "decree"
@@ -29,15 +29,15 @@ class Decree < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/opendecree/decree/releases/download/v0.12.0-alpha.4/decree_linux_amd64.tar.gz"
-      sha256 "4fab6793bbbfbe942f8fb79c2a0354409634df60b5a90a077c0daef11eed694f"
+      url "https://github.com/opendecree/decree/releases/download/v0.12.0-alpha.5/decree_linux_amd64.tar.gz"
+      sha256 "5bb7fb4d040dac8eb319c4a0b1f4e445f1bf6fa9299fb6d802243074e9fb494a"
       define_method(:install) do
         bin.install "decree"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/opendecree/decree/releases/download/v0.12.0-alpha.4/decree_linux_arm64.tar.gz"
-      sha256 "53c1f44c4f917ebdb1dbabe64d9d0605e8437c7d999bf7bfb99e65b1c79a91d9"
+      url "https://github.com/opendecree/decree/releases/download/v0.12.0-alpha.5/decree_linux_arm64.tar.gz"
+      sha256 "f8c1b273494e82441956bc27e5d61382b7e73cb3e87815beb7300c250363bbd7"
       define_method(:install) do
         bin.install "decree"
       end
